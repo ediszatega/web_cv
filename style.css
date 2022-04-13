@@ -1,0 +1,222 @@
+:root {
+    /*
+    --primary: #e7ad06;
+    --black: #121910;
+    --white: #fefefe;
+    */
+
+    --primary: #121212;
+    --secondary_1: #f7c138;
+    --secondary_2: #dd5546;
+    --secondary_3: #02958d;
+    --white: #fefefe;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* GENERAL START */
+body {
+    background-color: var(--primary);
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--white);
+}
+/* GENERAL - END */
+
+#contact-title {
+    color: var(--secondary_1);
+}
+
+#education-title {
+    color: var(--secondary_2);
+}
+
+#language-title {
+    color: var(--secondary_3);
+}
+
+#additional-title {
+    color: var(--secondary_1);
+}
+
+#skills-title {
+    color: var(--secondary_2);
+}
+
+.wrapper {
+    margin: 1.5em 0em;
+}
+
+section#hero {
+    /*background-color: var(--primary);*/
+    background-image: url(./pictures/hero-background.jpg);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+.hero-img {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: 7px solid var(--secondary_2);
+}
+
+h1 span {
+    color: var(--secondary_1);
+}
+
+.hero-text {
+    width: 90%;
+    padding: 0.7em 0em 2em 0em;
+}
+
+.hero-text, .hero-title, .hero-subtitle {
+    text-align: center;
+}
+
+.hero-title span {
+    width: 30%;
+}
+
+.hero-subtitle {
+    padding-top: 0.3em;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+section#social-media {
+    background-color: #1e1e1e;
+    width: 100%;
+    padding: 1.5em 0em;
+    border-top: 7px solid var(--secondary_3);
+    /*border-bottom: 7px solid var(--secondary_3);*/
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+
+}
+
+.icons svg {
+    padding: 0em 0.7em;
+    background-color: #1e1e1e;
+
+}
+
+.info svg path {
+    fill: #f9f9f9;
+}
+
+#hero, #contact, #education, #languages, #additional, #skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+}
+
+.uni {
+    padding-bottom: 1em;
+}
+
+.education-date {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.education-name {
+    font-weight: 400;
+}
+
+.education-degree {
+    font-style: italic;
+}
+
+#contact,  #education, #languages, #additional, #skills {
+    padding: 1.2em 0em;
+    background-color: var(--primary);
+}
+
+.section-title {
+    padding-bottom: 0.3em;
+}
+
+.skills-icons {
+    padding-top: 1em;
+}
+
+.skills-icons img {
+    height: 4em;
+    width: 4em;
+}
+
+section#skills {
+    background-color: #1e1e1e;
+}
+
+section#skills h3 {
+    color: #1e1e1e;
+}
+
+@media all and (min-width: 900px) {
+    .wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .hero-text {
+        width: 50%;
+    }
+
+    .edu-lang {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .vertical-break {
+        width: 5px;
+        border-radius: 50%;
+        background-color: var(--secondary_1);
+    }
+
+    .skills-icons img {
+        padding: 0em 0.7em;
+    }
+
+    section#social-media {
+        width: 100%;
+    }
+
+    section#skills {
+        width: 100%;
+    }
+}
