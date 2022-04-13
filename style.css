@@ -182,8 +182,9 @@ section#skills {
     background-color: #1e1e1e;
 }
 
-section#skills h3 {
-    color: #1e1e1e;
+.add-text span {
+    font-style: italic;
+    font-weight: lighter;
 }
 
 @media all and (min-width: 900px) {
